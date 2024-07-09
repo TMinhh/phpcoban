@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1 class="text-center">Hello, Bootstrap!</h1>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="bai2.html">Trang chủ</a></li>
+        <li class="breadcrumb-item"><a href="lienhe.html">Liên hệ</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Dữ liệu</li>
+    </ol>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" style="background-color: lightcoral; text-align: center;">
+            <span>Cot 1</span>
+            <div class="card" style="width: 13rem;">
+                <img src="image/anh1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Tiêu đề thẻ</h5>
+                    <p class="card-text text-center">Nội dung thẻ.</p>
+                    <a href="#" class="btn btn-primary text-center">Đi đâu đó</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" style="background-color: lightsalmon; text-align: center">
+            Cot 2
+            <div class="card" style="width: 13rem;">
+                <img src="image/anh1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Tiêu đề thẻ</h5>
+                    <p class="card-text text-center">Nội dung thẻ.</p>
+                    <a href="#" class="btn btn-primary text-center">Đi đâu đó</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" style="background-color: lightgreen; text-align: center">
+            Cot 3
+            <div class="card" style="width: 13rem;">
+                <img src="image/anh1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Tiêu đề thẻ</h5>
+                    <p class="card-text text-center">Nội dung thẻ.</p>
+                    <a href="#" class="btn btn-primary text-center">Đi đâu đó</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" style="background-color: lightblue; text-align: center">
+            Cot 4
+            <div class="card" style="width: 13rem;">
+                <img src="image/anh1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Tiêu đề thẻ</h5>
+                    <p class="card-text text-center">Nội dung thẻ.</p>
+                    <a href="#" class="btn btn-primary text-center">Đi đâu đó</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-danger">Day la that bai</div>
+            <div class="alert alert-success">Day la thanh cong</div>
+        </div>
+    </div>
+
+
+    <button type="button" class="btn btn-success">Nut thu nhat</button>
+
+    <button type="button" class="btn btn-primary">Nut thu hai</button>
+</div>
+<div class="container">
+    <div class="col-md-6 offset-3">
+        <h2>Form dang ki hoc vien</h2>
+        <form action="lienhe.html" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Địa chỉ email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Mật khẩu</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+            </div>
+            <div>
+                <label>Thành phố</label>
+                <select name="City" class="form-control">
+                    <option value="HN">Hà Nội</option>
+                    <option value="HP">Hải Phòng</option>
+                    <option value="QN">Quảng Ninh</option>
+                </select>
+            </div><br>
+            <textarea name="noidung" class="form-control" rows="5" placeholder="Ghi chú"></textarea><br>
+            <div class="form-group">
+                <label style="font-size: 20px">Chọn ban</label><br>
+                <input type="checkbox">
+                <label>Ban chuyên môn</label><br>
+                <input type="checkbox">
+                <label>Ban hậu cần</label><br>
+                <input type="checkbox">
+                <label>Ban nhân sự</label><br>
+                <input type="checkbox">
+                <label>Ban truyền thông</label><br>
+            </div>
+            <div class="form-group">
+                <label>Giới tính</label><br>
+                <input type="radio"/>
+                <label>Nam</label><br>
+                <input type="radio"/>
+                <label>Nữ</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 18rem">Gửi</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
